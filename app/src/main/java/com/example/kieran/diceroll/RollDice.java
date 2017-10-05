@@ -31,11 +31,12 @@ public class RollDice extends AppCompatActivity {
            }
         });
     }
-    public void DiceRoll(){
+    public int DiceRoll(){
         int nNumImg = 6;
         Random Rand = new Random();
         int nRand = Rand.nextInt(nNumImg)+1;
         String sImgName = "d" + nRand;
         int nImgName = getResources().getIdentifier(sImgName, "drawable", getPackageName());
+        return nImgName;
     }
 }
